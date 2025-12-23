@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tasks Demo</title>
+
+    <style>
+        /* Task 1: heading styling */
+        .q1 {
+            text-align: center;
+            text-transform: capitalize;
+            color: aqua;
+            background-color: rgb(204, 141, 228);
+        }
+
+        /* Universal selector: apply font to whole page */
+        * {
+            font-family: "Times New Roman", serif;
+        }
+
+        /* Descendant selectors */
+        #outer p {
+            font-size: 25px;
+        }
+
+        #inner p {
+            font-size: 10px;
+        }
+
+        /* Task 3: circle div */
+        .task-3 {
+            height: 100px;
+            width: 100px;
+            background-color: rgba(0, 255, 0, 1);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Task 2: styled heading -->
+    <div class="q1">
+        <h1>hello this is heading</h1>
+    </div>
+
+    <!-- Nested divs with different paragraph font sizes -->
+    <div id="outer">
+        <p>Outer div text size 25px</p>
+
+        <div id="inner">
+            <h3>hellooooooooo</h3>
+            <p>Inner div text size is 10px</p>
+        </div>
+    </div>
+
+    <!-- Task 3: circle using border-radius -->
+    <hr>
+
+    <p>
+        Q1: Create a div with height & width of 100px.
+        Set its background color to green & the border radius to 50%.
+    </p>
+
+    <div class="task-3"></div>
+</body>
+</html>

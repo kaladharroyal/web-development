@@ -1,0 +1,23 @@
+form{
+    border: 2px solid black;
+    width: 300px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 150px;
+    width: 300px;
+    margin: 20px auto;
+}
+
+#box {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.heading{
+    color: red;
+    text-align: center;
+}
+button{
+    background-color: green;
+}

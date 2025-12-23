@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .box1{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(124, 244, 188);
+            border: 2px solid black;
+            padding: 20px;
+            flex-direction: row ;
+        }
+        #boxs{
+            display: grid;
+            gap: 20px;
+            padding-top: 20px;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .box2{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(167, 210, 46);
+            border: 2px solid black;
+            padding: 20px;
+            flex-direction: row ;
+
+        }
+    </style>
+</head>
+<body><div id="box">
+    <div class="box1">box</div>
+    <div class="box1">box</div>
+    <div class="box1">box</div>
+    <div class="box1">box</div>
+    </div>
+
+
+
+    <div id="boxs">
+    <div class="box2">box</div>
+    <div class="box2">box</div>
+    <div class="box2">box</div>
+    <div class="box2">box</div>
+    </div>
+</body>
+</html>

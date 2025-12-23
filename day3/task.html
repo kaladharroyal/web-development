@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Grid Areas Layout</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    grid-template-areas:
+      "one one two two three three"
+      "four four four five five five"
+      "six six seven seven eight eight";
+    gap: 1px;
+    width: 600px;
+    border-color:2px solid black;
+  }
+
+  .box {
+    background: #2ecc71;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    border-radius: 10px;
+    border-color:2px solid black;
+  }
+
+  .one   { grid-area: one; }
+  .two   { grid-area: two; }
+  .three { grid-area: three; }
+  .four  { grid-area: four; }
+  .five  { grid-area: five; }
+  .six   { grid-area: six; }
+  .seven { grid-area: seven; }
+  .eight { grid-area: eight; }
+</style>
+</head>
+<body>
+
+<div class="grid">
+  <div class="box one">1</div>
+  <div class="box two">2</div>
+  <div class="box three">3</div>
+
+  <div class="box four">4</div>
+  <div class="box five">5</div>
+
+  <div class="box six">6</div>
+  <div class="box seven">7</div>
+  <div class="box eight">8</div>
+</div>
+
+</body>
+</html>

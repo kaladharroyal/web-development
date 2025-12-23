@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="form">
+        <label for="username">username
+            <input type="text" id="name" name="username" requried minlength="3">
+        </label><br><br>
+        <label for="Email">Email:
+            <input type="text" id="email" name="email" required>
+        </label><br><br>
+        <label for="age">Age:
+            <input type="text" id="age" name="age" required min="10" max="120">
+        </label><br><br>
+        <button type="submit">join</button>
+        <div id="output">
+            <h1>Output:</h1>
+        </div>
+
+    </form>
+    <label for="password">password <br><br> <input type="password" id="password" required></label>
+    <div id="passhint">This is password hint</div>
+    <button type="submit">join</button>
+    <script>
+        document.getElementById("form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const age = document.getElementById("age").value;
+            document.getElementById("output").innerHTML = `
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Age:</strong> ${age}</p>
+                `;
+        });
+        const hint = document.getElementById("passhint")
+        document.getElementById("password").addEventListener("InputEvent",()=>
+        {
+        const pass = passwordInput.value;
+
+        if (pass.lengt<8){
+            hint.textContent  = "Too short! (Need *+ letters)"
+            hint.style.color= "red"
+        }else if(!/[A-Z]/.test(pass)){
+            hint.textContent = "Add a Capital letter" 
+            hint.style.color = "yellow"
+        }else if(!/[a-z]/.test(pass)){
+            hint.textContent = "Add a Small letter" 
+            hint.style.color = "orange"
+        }else if(!/[0-9]/.test(pass)){
+            hint.textContent = "Add a number!"
+            hint.style.color = "green"
+        }
+     });
+    </script>
+
+</body>
+
+</html>

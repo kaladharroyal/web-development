@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College LMS Portal</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #dbdfe8;
+    color: #333;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2b4eff;
+}
+
+.auth-links a {
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 500;
+    color: #2b4eff;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner-section {
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    min-width: 70%;
+    height: 220px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #000000, #6a82fb);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+    scroll-snap-align: center;
+    transition: 0.3s;
+}
+
+.slide h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.slide p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.slide.blurred {
+    filter: blur(2px);
+    opacity: 0.6;
+    transform: scale(0.9);
+}
+
+.slide.active {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Section Headings */
+.section-title {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+/* Courses */
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.course-card h3 {
+    color: #1b1c1d;
+    margin-bottom: 10px;
+}
+
+/* Companies */
+.companies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.company-box {
+    background: #f0f3ff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Testimonials */
+.testimonial {
+    background: #f9fafc;
+    padding: 20px;
+    border-left: 5px solid #2b4eff;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Navbar -->
+    <header>
+        <div class="logo">College LMS</div>
+        <div class="auth-links">
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner-section">
+        <div class="slider" id="bannerSlider">
+            <div class="slide active">
+                <h2>Smart Learning Platform</h2>
+                <p>Access courses, assignments, and progress in one place.</p>
+            </div>
+            <div class="slide blurred">
+                <h2 style="z-index: 50;">Industry-Ready Courses</h2>
+                <img src="./day1/images/krishna.jpg" alt="" style="padding-top: 10px;">
+                <p>Learn MERN, AI/ML, Java Full Stack & more.</p>
+            </div>
+            <div class="slide blurred">
+                <h2>Placement Support</h2>
+                <p>Get trained for top IT companies.</p>
+            </div>
+            <div class="slide blurred">
+                <h2>Placement</h2>
+                <p>Get trained </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section>
+        <h2 class="section-title">Popular Courses</h2>
+        <div class="courses-grid">
+            <div class="course-card">
+                <h3>MERN Stack</h3>
+                <p>MongoDB, Express, React, Node.js</p>
+            </div>
+            <div class="course-card">
+                <h3>Java Full Stack</h3>
+                <p>Spring Boot, Hibernate, MySQL</p>
+            </div>
+            <div class="course-card">
+                <h3>AI & ML</h3>
+                <p>Python, ML Algorithms, Projects</p>
+            </div>
+            <div class="course-card">
+                <h3>Data Science</h3>
+                <p>Statistics, Python, Visualization</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Companies -->
+    <section>
+        <h2 class="section-title">Our Placement Partners</h2>
+        <div class="companies">
+            <div class="company-box">TCS</div>
+            <div class="company-box">Infosys</div>
+            <div class="company-box">Wipro</div>
+            <div class="company-box">Cognizant</div>
+            <div class="company-box">Accenture</div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+        <h2 class="section-title">Student Feedback</h2>
+        <div class="testimonial">
+            "This LMS helped me track my learning and placements easily."
+            <br><strong>- CSE Student</strong>
+        </div>
+        <div class="testimonial">
+            "Clean interface and very useful for assignments and quizzes."
+            <br><strong>- AI & ML Student</strong>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 College LMS Portal | Developed as Academic Project
+    </footer>
+
+</div>
+
+<script>
+const slider = document.getElementById('bannerSlider');
+const slides = document.querySelectorAll('.slide');
+
+function updateBlur() {
+    const center = slider.getBoundingClientRect().left + slider.offsetWidth / 2;
+
+    slides.forEach(slide => {
+        const rect = slide.getBoundingClientRect();
+        const slideCenter = rect.left + rect.width / 2;
+        const distance = Math.abs(center - slideCenter);
+
+        if (distance < 120) {
+            slide.classList.add('active');
+            slide.classList.remove('blurred');
+        } else {
+            slide.classList.remove('active');
+            slide.classList.add('blurred');
+        }
+    });
+}
+
+slider.addEventListener('scroll', updateBlur);
+updateBlur();
+</script>
+
+</body>
+</html>

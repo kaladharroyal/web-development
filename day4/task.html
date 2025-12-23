@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            display: flex;
+            gap: 10px;
+            flex-direction: row;
+        }
+        .box{
+            border: 2px solid black;
+            border-radius: 20px;
+            height: 100px;
+            display: flex;
+            width: 100px;
+            justify-content: center;
+            background-color: red;
+            align-items: center;
+        }
+        @media (min-width:768px){
+            .outer{
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    </div>
+</body>
+</html>
+<!--save all resources-->

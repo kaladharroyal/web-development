@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & CSS Demo</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        button {
+            background-color: blue;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Registration Form -->
+    <form action="">
+        <h3 style="text-align: center;">Registration Form</h3>
+        <hr>
+
+        <label for="rollno">Roll Number:</label>
+        <input type="text" id="rollno" name="rollno">
+        <br><br>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        <br><br>
+
+        <span>Gender:</span>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="dob">DoB:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <label for="mobile">Mobile No:</label>
+        <input type="tel" id="mobile" name="mobile">
+        <br><br>
+
+        <label for="city">City:</label>
+        <select name="city" id="city">
+            <option value="">Select the city</option>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="bangalore">Bangalore</option>
+        </select>
+        <br><br>
+
+        <input type="checkbox" id="terms">
+        <label for="terms">
+            I agree to the <a href="terms.html">terms and conditions</a>
+        </label>
+        <br><br>
+
+        <textarea name="review" id="review" placeholder="Enter the movie review"></textarea>
+        <br><br>
+
+        <!-- Inline CSS example on button -->
+        <button type="submit" style="color: black; background-color: #c7d381ed;">
+            Submit
+        </button>
+    </form>
+
+    <!-- Iframe Section -->
+    <h1>I-frame tag</h1>
+    <iframe
+        src="https://www.youtube.com/embed/s2skans2dP4"
+        frameborder="3"
+        width="560"
+        height="315">
+        Youtube
+    </iframe>
+    <br><br>
+
+    <!-- CSS Types Demo -->
+    <hr>
+    <h1 style="text-align: center;">CSS Types</h1>
+
+    <!-- Inline CSS -->
+    <h1 style="color: black; background-color: aqua; text-align: center;">
+        Inline CSS
+    </h1>
+
+    <h1>Color systems</h1>
+    <h2>RGB coloring</h2>
+    <h1 style="color: rgb(255, 0, 0);">RGB coloring</h1>
+
+    <h2>Hexadecimal coloring</h2>
+    <h1 style="color: #00ff00;">Hexadecimal coloring</h1>
+
+    <hr><hr>
+
+    <!-- Internal / External CSS demo box -->
+    <div id="box">
+        <h1>This is a colored box</h1>
+    </div>
+
+    <br>
+    <hr>
+
+    <!-- External CSS class usage -->
+    <h1 class="heading">External CSS</h1>
+    <h1 class="heading">Heading 1</h1>
+    <h2 class="heading">Heading 2</h2>
+    <h3 class="heading">Heading 3</h3>
+
+    <hr>
+
+    <!-- Another button with inline CSS override -->
+    <button style="background-color: pink; color: black;">
+        Button
+    </button>
+
+    <hr>
+</body>
+</html>
