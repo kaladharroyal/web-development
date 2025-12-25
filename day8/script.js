@@ -4,13 +4,14 @@ document.getElementById("form").addEventListener("submit", function (e) {
   const rollno = document.getElementById("rollno").value.trim();
   const name = document.getElementById("username").value.trim();
   const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value;   // fixed id
+  const password = document.getElementById("password").value; // fixed id
   const age = document.getElementById("age").value;
-  const gender = document.querySelector('input[name="gender"]:checked')?.value || "";
+  const gender =
+    document.querySelector('input[name="gender"]:checked')?.value || "";
   const dob = document.getElementById("dob").value;
   const mobile = document.getElementById("mobile").value.trim();
   const city = document.getElementById("city").value;
-  const terms = document.getElementById("terms").checked;       // use checked
+  const terms = document.getElementById("terms").checked; // use checked
   const review = document.getElementById("review").value.trim();
 
   // Simple validations
@@ -28,12 +29,6 @@ document.getElementById("form").addEventListener("submit", function (e) {
     alert("Email is required.");
     return;
   }
-
-  if (!password || password.length < 6) {
-    alert("Password must be at least 6 characters.");
-    return;
-  }
-
   if (!gender) {
     alert("Please select gender.");
     return;
@@ -63,3 +58,32 @@ document.getElementById("form").addEventListener("submit", function (e) {
     <p><strong>review:</strong> ${review}</p>
   `;
 });
+
+function checkPasswordStrength() {
+  const password = document.getElementById("password").value;
+  const text = document.getElementById("strengthText");
+  const bar = document.getElementById("strengthBar");
+
+  let strength = 0;
+  if (password.length > 0) strength += 20;
+  if (password.length >= 8) strength += 30;
+  if (/[A-Z]/.test(password)) strength += 20;
+  if (/[0-9]/.test(password)) strength += 20;
+  if (/[^0-9a-zA-Z]/.test(password)) strength += 10;
+
+  bar.style.width = strength + "%";
+
+  if (strength < 50) {
+    bar.style.backgroundColor = "red";
+    text.textContent = "Strength:Weak";
+  } else if (strength < 80) {
+    bar.style.backgroundColor = "orange";
+    text.textContent = "Strength:Medium";
+  } else if (strength < 100) {
+    bar.style.backgroundColor = "Green";
+    text.textContent = "Strength:Very Strong";
+  } else {
+    bar.style.backgroundColor = "Green";
+    text.textContent = "Strength: Strong";
+  }
+}
