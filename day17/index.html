@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            gap: 20px;
+        }
+    </style>
 </head>
 <body>
+    <div id="container">
     <button id="btn">trigger event</button>
     <p id="pressed"> pressed 0 times</p>
     <p id="triggered">triggered 0 times</p>
     <script src="index.js"></script>
+    </div>
 </body>
 </html>
