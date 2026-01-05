@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // session storage
+        sessionStorage.setItem("name", "Kaladhar Royal")
+        const data1 = sessionStorage.getItem("name")
+        console.log(data1);
+        // local storage
+        localStorage.setItem("name", "Kaladhar Royal")
+        const data = localStorage.getItem("name")
+        console.log(data);
+
+
+        // remove item from local storage
+        // localStorage.removeItem("name")
+        // clear all items from local storage
+        // localStorage.clear()
+        // get all keys from local storage
+        // const keys = Object.keys(localStorage)
+        // console.log(keys);
+
+        // object from local storage
+        let obj = {
+            name:"Kaladhar Royal", 
+            age: 21, 
+            city:"Kadapa",
+            country:"India"
+        }
+        localStorage.setItem("user", obj);
+        const user = localStorage.getItem("user");
+        console.log(user); // [object Object]
+        // converting object to string using JSON.stringify()
+        localStorage.setItem("user", JSON.stringify(obj));
+        const user1 = localStorage.getItem("user");
+        console.log(user1); // {"name":"Kaladhar Royal","age":21,"city":"Kadapa","country":"India"}
+        // converting string back to object using JSON.parse()
+        const userObj = JSON.parse(user1);
+        console.log(userObj); // {name: 'Kaladhar Royal', age: 21, city: 'Kadapa', country: 'India'}
+        //to clear local storage
+        // localStorage.clear();
+        // to clear session storage
+        // sessionStorage.clear();
+        
+    </script>
+
+</body>
+
+</html>
