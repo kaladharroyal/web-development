@@ -1,0 +1,14 @@
+api key = 4118b5096349c671da2fceb6b06b9c76
+
+sample code to fetch the data 
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+
+
+Built-in API request by city name
+You can call by city name or city name, state code and country code. Please note that searching by states available only for the USA locations.
+https://api.openweathermap.org/data/2.5/weather?q={kadapa}&appid={4118b5096349c671da2fceb6b06b9c76}
+
+https://api.openweathermap.org/data/2.5/weather?q={city name},{country code}&appid={API key}
+
+https://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid={API key}
