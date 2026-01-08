@@ -1,0 +1,16 @@
+ Node.js :
+ node.js is a javascript runtime environment that allows you to run javascript outside the browser mainly used for building backend (server side) application.
+
+
+key features of javascript
+
+1. Non-blocking I/O
+
+2. event driven architecture 
+
+3. single threaded
+
+4. fast performance
+
+5. cross-platform
+
