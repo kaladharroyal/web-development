@@ -1,0 +1,50 @@
+props :- passing the component from parent component to child component
+
+ContextAPI: 
+
+ContextAPI is a built in feature in React introduced in 16.3 version.
+it allows to share the data across components tree without having to pass props manually at every level(prop drilling).
+globally available.
+
+---------------------------------------------------------------------------
+
+why??
+problem: prop drilling
+the data is shared through from parent to child
+
+structure of propdrilling:
+
+<grandparent>
+    <parent>
+        <child>
+        <child>
+    <parent>
+<grandparent>
+
+
+solution: ContextAPI
+it allows to share the data across components tree without having to pass props manually at every level(prop drilling).
+
+---------------------------------------------------------------------------
+
+structure of ContextAPI:
+
+steps in ContextAPI
+
+1. Create Context
+2. Provide Context
+3. Consume Context
+
+---------------------------------------------------------------------------
+
+step-1
+
+creatContext
+
+step-2
+
+.provider
+
+
+
+
