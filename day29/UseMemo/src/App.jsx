@@ -1,5 +1,5 @@
 import { useState } from 'react'
-// import ReducerFunc from './components/ReducerFunc'
+import ReducerFunc from '../../UseReducer/src/components/ReducerFunc'
 import UseMemo from './components/UseMemo'
 import './App.css'
 
