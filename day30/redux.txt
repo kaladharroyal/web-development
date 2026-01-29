@@ -1,0 +1,29 @@
+redux
+
+redux is a state management library for javascript apps (mosthly used with React) that helps to manage and centralize the application state.
+components dispatch actions to update state.
+predictable and traceble state traansitions
+
+
+principles:
+1. single source of truth
+2. state is read only
+3. pure functions(reducers)
+
+
+flow:
+
+ui -> dispatch-> reducers-> store-> ui re-renders
+
+
+Redux key concepts:
+
+-store
+-slice
+-action
+-reducer
+-dispatch
+-selector
+
+
+
