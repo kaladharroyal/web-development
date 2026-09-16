@@ -11,7 +11,7 @@ web-development/
 ├── 01-html-css/                               # Phase 1: Web Foundations (HTML5 & CSS3)
 ├── 02-javascript-core/                        # Phase 2: Core JavaScript & DOM Manipulation
 ├── 03-async-javascript/                       # Phase 3: Asynchronous JS & Web APIs
-├── 04-backend-nodejs-express-mongodb/         # Phase 4: Backend Engineering (Node/Express/Mongo)
+├── 04-backend-nodejs-mongodb/                 # Phase 4: Backend Engineering (Node/Express/Mongo)
 ├── 05-react-frontend/                         # Phase 5: Modern React & State Management
 └── 06-notes-and-demos/                        # Reference Notes & Scratch Demos
 ```
@@ -50,11 +50,11 @@ web-development/
 
 ---
 
-### [04-backend-nodejs-express-mongodb/](./04-backend-nodejs-express-mongodb/) — Backend Engineering
-* [day20-nodejs-basics/](./04-backend-nodejs-express-mongodb/day20-nodejs-basics/) — Node.js runtime, CommonJS modules, and building an HTTP server from scratch using `http`.
-* [day21-nodemailer-call-bind/](./04-backend-nodejs-express-mongodb/day21-nodemailer-call-bind/) — Automated email sending with Nodemailer, and JavaScript `this` keyword (`call`, `apply`, `bind`).
-* [expressjs/](./04-backend-nodejs-express-mongodb/expressjs/) — Express.js server, middleware configuration, JSON body parsing, and routing.
-* [day31-mongodb/](./04-backend-nodejs-express-mongodb/day31-mongodb/) — NoSQL databases, MongoDB concepts, collections, and queries.
+### [04-backend-nodejs-mongodb/](./04-backend-nodejs-mongodb/) — Backend Engineering
+* [day20-nodejs-basics/](./04-backend-nodejs-mongodb/day20-nodejs-basics/) — Node.js runtime, CommonJS modules, and building an HTTP server from scratch using `http`.
+* [day21-nodemailer-call-bind/](./04-backend-nodejs-mongodb/day21-nodemailer-call-bind/) — Automated email sending with Nodemailer, and JavaScript `this` keyword (`call`, `apply`, `bind`).
+* [expressjs/](./04-backend-nodejs-mongodb/expressjs/) — Express.js server, middleware configuration, JSON body parsing, and routing.
+* [day31-mongodb/](./04-backend-nodejs-mongodb/day31-mongodb/) — NoSQL databases, MongoDB concepts, collections, and queries.
 
 ---
 
@@ -93,7 +93,7 @@ npm run dev
 
 ### Running the Express.js Backend
 ```bash
-cd 04-backend-nodejs-express-mongodb/expressjs
+cd 04-backend-nodejs-mongodb/expressjs
 npm install
 node server.js
 ```
