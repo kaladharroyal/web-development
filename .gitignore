@@ -43,6 +43,4 @@ coverage/
 *.lcov
 .nyc_output
 
-# Legacy root workspace folder
-/expressjs/
 
